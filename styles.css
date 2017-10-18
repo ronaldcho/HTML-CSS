@@ -1,0 +1,134 @@
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    text-align: justify;
+    white-space: wrap;
+    background-color: lightgrey;
+}
+.flex-item {
+    display: flex;
+    background-color: cornflowerblue;
+    width: 75%;
+    margin: 5px;
+    border: solid 2px black;
+    display: inline-block;
+}
+
+.article {
+    text-align: left;
+}
+
+body {
+    background: url("https://apod.nasa.gov/apod/image/1710/SteveAuroralArc_allskyproj960.jpg");
+    width: 800px;
+    background-repeat: center;
+    background-position: left;
+    background-attachment: fixed;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content:center;
+  padding: 5px;
+  width: 790px;
+  font-size: 15px;
+  background: rgb(106, 139, 248);
+  color:lightgreen;
+}
+footer {
+  background: #aaa;
+  color:white;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  height: 25px;
+  margin: 5px;
+  background: rgb(66, 190, 250);
+}
+.nav__ul {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    list-style-type: square;
+}
+.nav__li {
+    box-sizing: border-box;
+    border-radius: 0 0 4px 5px;
+    padding:0;
+    white-space: nowrap;
+    height: 25px;
+    background-color: rgb(106, 130, 230);
+    margin: 0 10%
+}
+.nav__li:over {
+  color: rgb( 190, 300, 280);
+  font-weight: 900;
+}
+
+/* img.bg {
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+      
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+      
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+  } */
+/*
+  @media screen and (max-width: 124px) { /* Specific to this particular image */
+    img.bg {
+      left: 1500%;
+      margin-right: -512px;   /* 50% */
+    }
+  } */
+ 
+@media all and (min-width: 768px) {
+    .nav {text-align: right;-flex-container: 1 auto;-flex-container:1 auto;-flex-item-order:1;order:1;}
+    .article {-flex-item-flex:5 0px;flex:5 0px;-flex-item-order:2;order:2;}
+    footer {-flex-item-order:3;order:3;}
+}
+/*
+html { 
+    background: url("https://apod.nasa.gov/apod/image/1710/SteveAuroralArc_allskyproj960.jpg"); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+a:link {
+    color: blue; 
+    background-color: transparent; 
+    text-decoration: none;
+}
+/*
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}*/
